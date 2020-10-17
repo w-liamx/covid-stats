@@ -1,0 +1,3 @@
+export const VALUE_REQUEST = "VALUE_REQUEST";
+export const VALUE_SUCCESS = "VALUE_SUCCESS";
+export const VALUE_FAIL = "VALUE_FAIL";
