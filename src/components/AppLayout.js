@@ -5,8 +5,8 @@ function AppLayout(props) {
   const { Header, Content, Footer } = Layout;
 
   return (
-    <Layout style={{height: "100vh"}}>
-      <Layout style={{height: "100vh"}}>
+    <Layout>
+      <Layout>
         <Header
           className="site-layout-sub-header-background"
           style={{ padding: 0 }}
