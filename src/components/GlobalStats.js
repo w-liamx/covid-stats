@@ -15,6 +15,10 @@ export const GlobalStats = () => {
       //
     };
   }, [dispatch]);
+
+  // const addCommas = (num) => {
+  //   (parseInt(num)).toLocaleString()
+  // }
   
   return (
     <div>
@@ -32,15 +36,15 @@ export const GlobalStats = () => {
         <>
           <div >
             <h3>Coronavirus Cases Across All Continents:</h3>
-            <h2>{stats.cases}</h2>
+            <h2>{(parseInt(stats.cases)).toLocaleString()}</h2>
           </div>
           <div>
             <h3>Total Recovered:</h3>
-            <h2 className="green">{(stats.recovered)}</h2>
+            <h2 className="green">{(parseInt(stats.recovered)).toLocaleString()}</h2>
           </div>
           <div>
             <h3>Total Deaths:</h3>
-            <h2 className="red">{(stats.deaths)}</h2>
+            <h2 className="red">{(parseInt(stats.deaths)).toLocaleString()}</h2>
           </div>
         </>
         )}
@@ -61,15 +65,15 @@ export const GlobalStats = () => {
         <>
           <div className="whole">
             <h3>Total active cases:</h3>
-            <h2>{(stats.active)}</h2>
+            <h2>{(parseInt(stats.active)).toLocaleString()}</h2>
           </div>
           <div className="difference">
             <div>
-            <h3 className="safe">{(stats.active - stats.critical)}</h3>
+            <h3 className="safe">{(parseInt(stats.active - stats.critical)).toLocaleString()}</h3>
               <p>mild</p>
             </div>
             <div>
-              <h3 className="warning">{(stats.critical)}</h3>
+              <h3 className="warning">{(parseInt(stats.critical)).toLocaleString()}</h3>
               <p>critical</p>
             </div>
           </div>
@@ -91,15 +95,15 @@ export const GlobalStats = () => {
           <>
           <div className="whole">
             <h3>Total closed cases:</h3>
-            <h2 className="gray">{(stats.cases - stats.active)}</h2>
+            <h2 className="gray">{(parseInt(stats.cases - stats.active)).toLocaleString()}</h2>
           </div>
           <div className="difference">
             <div>
-              <h3 className="green">{(stats.recovered)}</h3>
+              <h3 className="green">{(parseInt(stats.recovered)).toLocaleString()}</h3>
               <p>Recovered</p>
             </div>
             <div>
-              <h3 className="red">{(stats.deaths)}</h3>
+              <h3 className="red">{(parseInt(stats.deaths)).toLocaleString()}</h3>
               <p>Deaths</p>
             </div>
           </div>
