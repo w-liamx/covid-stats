@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route} from "react-router-dom"
+import { BrowserRouter as Router} from "react-router-dom"
 import './App.css';
 import AppLayout from './components/AppLayout';
 import { GlobalStats } from './components/GlobalStats';
-import { AnalysisStats } from './components/AnalysisStats';
-import { CountriesStats } from './components/CountriesStats';
+// import { AnalysisStats } from './components/AnalysisStats';
+// import { CountriesStats } from './components/CountriesStats';
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       <Router>
         <AppLayout>
           <GlobalStats />
-          <AnalysisStats />
-          <CountriesStats />
+          {/* <AnalysisStats /> */}
+          {/* <CountriesStats /> */}
         </AppLayout>
       </Router>
     </div>
